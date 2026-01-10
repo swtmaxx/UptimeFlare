@@ -15,7 +15,7 @@ const pageConfig: PageConfig = {
 const workerConfig: WorkerConfig = {
   monitors: [
     {
-      id: 'home'，
+      id: 'home',
       name: '主页',
       method: 'GET',
       target: 'https://swtmax.top/',
