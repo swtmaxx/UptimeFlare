@@ -43,6 +43,7 @@ const workerConfig: WorkerConfig = {
       name: 'MC服务器',
       method: 'TCP_PING',
       target: '38.14.249.137:25565',
+      hideLatencyChart: true,
     },
   ],
 }
