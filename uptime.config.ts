@@ -15,7 +15,7 @@ const pageConfig: PageConfig = {
 const workerConfig: WorkerConfig = {
   monitors: [
     {
-      id: '资源站',
+      id: 'openlist',
       name: '资源站',
       method: 'GET',
       target: 'https://openlist.swtmax.top/',
