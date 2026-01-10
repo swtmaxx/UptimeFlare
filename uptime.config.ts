@@ -15,19 +15,34 @@ const pageConfig: PageConfig = {
 const workerConfig: WorkerConfig = {
   monitors: [
     {
+      id: 'home'，
+      name: '主页',
+      method: 'GET',
+      target: 'https://swtmax.top/',
+      statusPageLink: 'https://swtmax.top/',
+      hideLatencyChart: true,
+    },
+    {
       id: 'openlist',
       name: '资源站',
       method: 'GET',
       target: 'https://openlist.swtmax.top/',
+      statusPageLink: 'https://openlist.swtmax.top/',
+      hideLatencyChart: true,
     },
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      id: 'mcdocs',
+      name: 'MC文档',
+      method: 'GET',
+      target: 'https://docs.swtmax.top/',
+      statusPageLink: 'https://docs.swtmax.top/',
+      hideLatencyChart: true,
+    },
+    {
+      id: 'mcserver',
+      name: 'MC服务器',
       method: 'TCP_PING',
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
-      timeout: 5000,
+      target: '38.14.249.137:25565',
     },
   ],
 }
