@@ -52,8 +52,8 @@ const workerConfig: WorkerConfig = {
       id: 'mcdocs',
       name: 'MC文档',
       method: 'GET',
-      target: 'https://docs.swtmax.top/',
-      statusPageLink: 'https://docs.swtmax.top/',
+      target: 'https://mcdocs.swtmax.top/',
+      statusPageLink: 'https://mcdocs.swtmax.top/',
       hideLatencyChart: true,
     },
     {
