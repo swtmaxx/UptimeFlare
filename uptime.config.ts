@@ -56,22 +56,10 @@ const workerConfig: WorkerConfig = {
       name: 'MC服务器',
       method: 'TCP_PING',
       target: '38.14.249.137:25565',
+      statusPageLink: 'https://mc.swtmax.top/',
       hideLatencyChart: true,
     },
   ],
-  notification: {
-    webhook: {
-      url: 'https://apprisevercel-rosy-six.vercel.app/notify',
-      payloadType: 'json',
-      payload: {
-        urls: 'pushplus://6c6e9653e1e04a0992aca744cf2d375b',
-        body: '$MSG'
-      },
-      timeout: 10000,
-    },
-    timeZone: 'Asia/Shanghai',
-    gracePeriod: 5,
-  },
 }
 
 const maintenances: MaintenanceConfig[] = []
