@@ -1,8 +1,3 @@
-// This is a simplified example config file for quickstart
-// Some not frequently used features are omitted/commented out here
-// For a full-featured example, please refer to `uptime.config.full.ts`
-
-// Don't edit this line
 import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
@@ -64,9 +59,21 @@ const workerConfig: WorkerConfig = {
       hideLatencyChart: true,
     },
   ],
+  notification: {
+    webhook: {
+      url: 'https://apprisevercel-rosy-six.vercel.app/notify',
+      payloadType: 'json',
+      payload: {
+        urls: 'pushplus://6c6e9653e1e04a0992aca744cf2d375b',
+        body: '$MSG'
+      },
+      timeout: 10000,
+    },
+    timeZone: 'Asia/Shanghai',
+    gracePeriod: 5,
+  },
 }
 
 const maintenances: MaintenanceConfig[] = []
 
-// Don't edit this line
 export { maintenances, pageConfig, workerConfig }
