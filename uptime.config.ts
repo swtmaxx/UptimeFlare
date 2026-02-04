@@ -44,14 +44,6 @@ const workerConfig: WorkerConfig = {
       hideLatencyChart: true,
     },
     {
-      id: 'mcdocs',
-      name: 'MC文档',
-      method: 'GET',
-      target: 'https://mcdocs.swtmax.top/',
-      statusPageLink: 'https://mcdocs.swtmax.top/',
-      hideLatencyChart: true,
-    },
-    {
       id: 'mcserver',
       name: 'MC服务器',
       method: 'TCP_PING',
