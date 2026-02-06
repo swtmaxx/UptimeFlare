@@ -48,6 +48,13 @@ const workerConfig: WorkerConfig = {
       name: 'MC服务器',
       method: 'TCP_PING',
       target: '38.14.249.137:25565',
+      hideLatencyChart: true,
+    },
+    {
+      id: 'mcwebsite',
+      name: 'MC服务器（网站）',
+      method: 'GET',
+      target: 'https://mc.swtmax.top/',
       statusPageLink: 'https://mc.swtmax.top/',
       hideLatencyChart: true,
     },
