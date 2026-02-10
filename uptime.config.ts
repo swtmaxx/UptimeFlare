@@ -44,6 +44,14 @@ const workerConfig: WorkerConfig = {
       hideLatencyChart: true,
     },
     {
+      id: 'comment',
+      name: '留言板',
+      method: 'GET',
+      target: 'https://waline.swtmax.top/',
+      statusPageLink: 'https://waline.swtmax.top/',
+      hideLatencyChart: true,
+    },
+    {
       id: 'mcserver',
       name: 'MC服务器',
       method: 'TCP_PING',
