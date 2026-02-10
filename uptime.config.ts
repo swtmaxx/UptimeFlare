@@ -2,8 +2,8 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   title: "站点监测",
-  logo: 'https://r2.201116.xyz/uploads/3d6e0ae7-09e0-4338-b33d-520d01074ec0.ico',
-  favicon: 'https://r2.201116.xyz/uploads/3d6e0ae7-09e0-4338-b33d-520d01074ec0.ico',
+  logo: 'https://r2.201116.xyz/uploads/1ac1a17d-875a-4552-98bd-dbb87f76d786.ico',
+  favicon: 'https://r2.201116.xyz/uploads/1ac1a17d-875a-4552-98bd-dbb87f76d786.ico',
   links: [
     { link: 'https://swtmax.top/', label: '主页', highlight: true },
   ],
